@@ -17,5 +17,5 @@ dangerButton.addEventListener("click", async () => {
 });
 
 chatbotButton.addEventListener("click", () => {
-  window.location.href = "/basicchatbot.html";
+  window.location.href = `${import.meta.env.BASE_URL}basicchatbot.html`;
 });
