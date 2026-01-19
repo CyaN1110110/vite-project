@@ -6,6 +6,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
+                basicchatbot: resolve(__dirname, 'basicchatbot.html'),
              },
          },
      },
