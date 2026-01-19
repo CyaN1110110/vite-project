@@ -1,9 +1,10 @@
 import "../indexStyles.css";
 import Swal from "sweetalert2";
 
-const button = document.querySelector("#dangerButton");
+const dangerButton = document.querySelector("#dangerButton");
+const chatbotButton = document.querySelector("#chatbotButton");
 
-button.addEventListener("click", async () => {
+dangerButton.addEventListener("click", async () => {
   await Swal.fire({
     icon: "warning",
     title: "I Said Do Not Click This Button",
@@ -13,4 +14,8 @@ button.addEventListener("click", async () => {
     background: "#0b1630",
     color: "rgba(255,255,255,0.92)",
   });
+});
+
+chatbotButton.addEventListener("click", () => {
+  window.location.href = "/basicchatbot.html";
 });

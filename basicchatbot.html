@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Chatbot</title>
+  </head>
+
+  <body>
+    <main class="app">
+      <section class="chat-card">
+        <header class="chat-header">
+          <h1 class="chat-title">Basic Chatbot</h1>
+          <a class="back-link" href="/">← Back</a>
+        </header>
+
+        <div id="chatLog" class="chat-log" aria-live="polite"></div>
+
+        <form id="chatForm" class="chat-form">
+          <input
+            id="chatInput"
+            class="chat-input"
+            type="text"
+            placeholder="메시지를 입력하세요..."
+            autocomplete="off"
+            required
+          />
+          <button id="sendBtn" class="send-btn" type="submit">Send</button>
+        </form>
+
+        <p class="hint">
+          Note: 프록시 없이 브라우저에서 API 키를 쓰면 키가 노출될 수 있어요.
+        </p>
+      </section>
+    </main>
+
+    <script type="module" src="/src/basicchatbotMain.js"></script>
+  </body>
+</html>

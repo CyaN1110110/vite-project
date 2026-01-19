@@ -34,6 +34,18 @@ body {
   padding: 24px;
 }
 
+.card {
+  width: min(760px, 92vw);
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+  padding: 22px;
+  border: 1px solid var(--stroke);
+  border-radius: 18px;
+  background: rgba(7, 11, 24, 0.35);
+  backdrop-filter: blur(6px);
+}
+
 .danger-btn {
   appearance: none;
   border: 1px solid var(--stroke);
@@ -44,9 +56,12 @@ body {
   letter-spacing: -0.02em;
   color: var(--text);
 
-  background: linear-gradient(180deg, rgba(77, 163, 255, 0.18), rgba(43, 111, 255, 0.12));
-  box-shadow:
-    0 18px 50px rgba(0, 0, 0, 0.45),
+  background: linear-gradient(
+    180deg,
+    rgba(77, 163, 255, 0.18),
+    rgba(43, 111, 255, 0.12)
+  );
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45),
     0 0 0 1px rgba(77, 163, 255, 0.08) inset;
 
   cursor: pointer;
@@ -56,8 +71,7 @@ body {
 .danger-btn:hover {
   transform: translateY(-2px);
   border-color: rgba(77, 163, 255, 0.35);
-  box-shadow:
-    0 22px 65px rgba(0, 0, 0, 0.55),
+  box-shadow: 0 22px 65px rgba(0, 0, 0, 0.55),
     0 0 0 1px rgba(77, 163, 255, 0.14) inset;
 }
 
@@ -67,8 +81,7 @@ body {
 
 .danger-btn:focus-visible {
   outline: none;
-  box-shadow:
-    0 0 0 4px rgba(77, 163, 255, 0.22),
+  box-shadow: 0 0 0 4px rgba(77, 163, 255, 0.22),
     0 18px 50px rgba(0, 0, 0, 0.45);
 }
 
@@ -79,4 +92,32 @@ body {
   font-size: 0.48em;
   font-weight: 600;
   color: var(--muted);
+}
+
+.nav-btn {
+  appearance: none;
+  border: 1px solid var(--stroke);
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  background: rgba(77, 163, 255, 0.08);
+  cursor: pointer;
+  transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+}
+
+.nav-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(77, 163, 255, 0.35);
+  background: rgba(77, 163, 255, 0.12);
+}
+
+.nav-btn:active {
+  transform: translateY(0px);
+}
+
+.nav-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(77, 163, 255, 0.18);
 }
